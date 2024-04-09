@@ -1,0 +1,21 @@
+
+
+.full-item {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.full-item > div {
+  width: 600px;
+  position: relative;
+  margin: 5% auto;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 9px;
+}
