@@ -27,7 +27,7 @@ const showNothing = () => {
   </div>
 }
 
-export default function Header({orders, onDelete}: IHeaderProps) {
+export default function Header({ orders, onDelete }: IHeaderProps) {
   const [cartOpen, setCartOpen] = useState<boolean>(false);
 
   return (
@@ -44,8 +44,8 @@ export default function Header({orders, onDelete}: IHeaderProps) {
         {cartOpen && (
           <div className="shop-cart">
             {orders.length > 0 ? (
-              showOrders(orders, onDelete) 
-            ): (
+              showOrders(orders, onDelete)
+            ) : (
               showNothing()
             )}
           </div>
